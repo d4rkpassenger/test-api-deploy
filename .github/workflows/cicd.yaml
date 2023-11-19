@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: d4ki/my-awesome-app:latest
+          tags: ${{ secrets.DOCKERHUB_REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/my-awesome-app:latest
